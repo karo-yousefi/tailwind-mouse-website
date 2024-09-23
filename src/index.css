@@ -24,32 +24,32 @@
 }
 
 @layer utilities {
-  .padding {
-    @apply sm:px-16 px-8 sm:py-24 py-12;
+  .padding { 
+    @apply sm:px-16 px-8 sm:py-24 py-12; /* General padding for normal and samll devices*/
   }
 
   .padding-x {
-    @apply sm:px-16 px-8;
+    @apply sm:px-16 px-8; /* x padding for normal and samll devices */
   }
 
   .padding-y {
-    @apply sm:py-24 py-12;
+    @apply sm:py-24 py-12; /* y padding for normal and samll devices */
   }
 
   .padding-l {
-    @apply sm:pl-16 pl-8;
+    @apply sm:pl-16 pl-8; /*  left padding for normal and samll devices */
   }
 
   .padding-r {
-    @apply sm:pr-16 pr-8;
+    @apply sm:pr-16 pr-8; /* right padding for normal and samll devices */
   }
 
   .padding-t {
-    @apply sm:pt-24 pt-12;
+    @apply sm:pt-24 pt-12;/* top padding for normal and samll devices */
   }
 
   .padding-b {
-    @apply sm:pb-24 pb-12;
+    @apply sm:pb-24 pb-12;/* bottom padding for normal and samll devices */
   }
 
   .info-text {
