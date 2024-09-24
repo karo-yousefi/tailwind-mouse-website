@@ -1,46 +1,43 @@
-import bigShoe1 from './big-shoe1.png'
-import bigShoe2 from './big-shoe2.png'
-import bigShoe3 from './big-shoe3.png'
+import bigMouse1 from './bigMouse1.png'
+import bigMouse2 from './bigMouse2.png'
+import bigMouse3 from './bigMouse3.png'
+import bigMouse4 from './bigMouse4.png'
 
-import customer1 from './customer1.jpeg'
-import customer2 from './customer2.svg'
+import customer1 from './customer1.png'
+import customer2 from './customer2.png'
 
-import footerLogo from './footer-logo.svg'
-import headerLogo from './header-logo.svg'
 
 import offer from './offer.svg'
 
-import shoe4 from './shoe4.svg'
-import shoe5 from './shoe5.svg'
-import shoe6 from './shoe6.svg'
-import shoe7 from './shoe7.svg'
-import shoe8 from './shoe8.svg'
+import mouse5 from './mouse5.png'
+import mouse6 from './mouse6.png'
+import mouse7 from './mouse7.png'
+import mouse8 from './mouse8.png'
 
 import thumbnailBackground from './thumbnail-background.svg'
-import thumbnailShoe1 from './thumbnail-shoe1.svg'
-import thumbnailShoe2 from './thumbnail-shoe2.svg'
-import thumbnailShoe3 from './thumbnail-shoe3.svg'
+import thumbnailMouse1 from './thumbnailMouse1.png'
+import thumbnailMouse2 from './thumbnailMouse2.png'
+import thumbnailMouse3 from './thumbnailMouse3.png'
+import thumbnailMouse4 from './thumbnailMouse4.png'
 
 export {
-    bigShoe1,
-    bigShoe2,
-    bigShoe3,
+    bigMouse1,
+    bigMouse2,
+    bigMouse3,
+    bigMouse4,
 
     customer1,
     customer2,
 
-    footerLogo,
-    headerLogo,
-
     offer,
-    shoe4,
-    shoe5,
-    shoe6,
-    shoe7,
-    shoe8,
+    mouse5,
+    mouse6,
+    mouse7,
+    mouse8,
 
     thumbnailBackground,
-    thumbnailShoe1,
-    thumbnailShoe2,
-    thumbnailShoe3
+    thumbnailMouse1,
+    thumbnailMouse2,
+    thumbnailMouse3,
+    thumbnailMouse4,
 }

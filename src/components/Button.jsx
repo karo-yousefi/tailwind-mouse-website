@@ -4,7 +4,7 @@ const Button = ({title, bgColor, textColor, icon}) => {
   const [isHoverd, setIsHovered] = useState(false);
   return (
     <button
-      className={`${bgColor} ${textColor} ${isHoverd ? "opacity-80" : ""} border-[1px] border-slate-800 transition-[0.25s] opacity-100 flex justify-center items-center gap-2 rounded-full px-10 h-14 text-2xl leading-none font-montserrat cursor-pointer`}
+      className={`flex justify-center items-center gap-2 ${bgColor} ${textColor} text-[30px] font-[500] h-16 px-16 rounded-[15px] cursor-pointer border-none leading-none font-raleway test`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}>
       {title}

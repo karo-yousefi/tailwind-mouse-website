@@ -1,14 +1,13 @@
 import { statistics } from "../constants";
 import { useState } from "react";
 
-import { bigShoe1 } from "../assets/images";
-import { shoes } from "../constants"
+import { bigMouse1 } from "../assets/images";
+import { mouses } from "../constants"
 import Button from "../components/Button";
-import ShoeCard from "../components/ShoeCard";
-import { arrowRight } from "../assets/icons";
+import MouseCard from "../components/MouseCard"; //Change
 
 const Hero = () => {
-  const [bigImg, setBigImg] = useState(bigShoe1);
+  const [bigImg, setBigImg] = useState(bigMouse1);
   return (
     <section
       id="home"
@@ -16,28 +15,26 @@ const Hero = () => {
       
       <div
         className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-        <p className="text-xl font-montserrat text-red-600 xl:mb-10">Our Summer Collection</p>
-        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] sm:leading-[82px] font-bold">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">The New Arrival</span>
+        <p className="text-2xl font-montserrat text-primary-300 font-[500] xl:mb-10 select-none">Our Gaming Mouses</p>
+        <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] sm:leading-[82px] font-bold select-none">
+          <span className="xl:bg-white xl:whitespace-nowrap text-textColor-400 relative z-10 pr-10">New Models Are</span>
           <br />
-          <span className="text-red-600 inline-block mt-10">Fast</span> Mouses
+          <span className="text-primary-300 inline-block mt-10">Out Now</span>
         </h1>
-        <p className="font-montserrat text-slate-gray text-2xl leading-8 mt-10 mb-14 sm:max-w-sm">
-        more text here
+        <p className="font-montserrat text-textColor-200 text-2xl leading-8 mt-10 mb-14 sm:max-w-sm select-none">
+        we specialize in providing cutting-edge gaming mice designed for competitive gamers and enthusiasts alike.
         </p>
         <Button 
-          title="click"
-          bgColor="bg-red-600"
-          textColor="text-white"
-          icon={arrowRight}/>
-
+          title="Learn More"
+          bgColor="bg-primary-200"
+          textColor="text-white"/>
         <div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
           {
             statistics.map((stat) => {
               return (
-                <div key={stat.label}>
-                  <p className="font-palanquin text-2xl font-bold text-red-600">{stat.value}</p>
-                  <p className="font-montserrat text-slate-gray text-2xl">{stat.label}</p>
+                <div key={stat.label} className=" select-none">
+                  <p className="font-palanquin text-2xl font-bold text-primary-200">{stat.value}</p>
+                  <p className="font-montserrat text-textColor-200 text-2xl">{stat.label}</p>
                 </div>
               );
             })
@@ -51,15 +48,15 @@ const Hero = () => {
           alt="Shoe Collection"
           width="610px"
           height="500px"
-          className="object-contain relative z-10"/>
+          className="object-contain relative z-10 transition-normal hover:scale-[1.23]"/>
 
           <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6 sm:bottom-[-140px]">
-            {shoes.map((shoe, index) => {
+            {mouses.map((mouse, index) => {
               return (
                 <div key={index}>
-                  <ShoeCard 
-                    imgURL={shoe}
-                    changeBigImg={(shoe) => {setBigImg(shoe)}}
+                  <MouseCard 
+                    imgURL={mouse}
+                    changeBigImg={(mouse) => {setBigImg(mouse)}}
                     bigImg={bigImg}
                   />
                 </div>

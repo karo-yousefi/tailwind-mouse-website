@@ -10,9 +10,10 @@ const CustomerReviews = () => {
         <p className="info-text m-auto mt-4 max-w-lg text-center">Hear stories from our customers</p>
         <div
           className="mt-25 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14">
-            {reviews.map((review) => {
+            {reviews.map((review, index) => {
               return (
                 <ReviewCard 
+                  key={index}
                   imgURL={review.imgURL}
                   customerName={review.customerName}
                   rating={review.rating}

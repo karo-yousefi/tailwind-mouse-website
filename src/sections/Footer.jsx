@@ -45,7 +45,7 @@ const Footer = () => {
                     <ul>
                       {item.links.map((link) => {
                         return (
-                          <li key={link.name} className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray cursor-pointer">
+                          <li key={link.name} className="mt-3 text-textColor-100 font-montserrat text-base leading-normal hover:text-textColor-200 cursor-pointer">
                             <a>{link.name}</a>
                           </li>
                         )
@@ -57,7 +57,7 @@ const Footer = () => {
             }
         </div>
       </div>
-      <div className="flex justify-between text-white-400 mt-24 max-sm:flex-col max-sm:items-center">
+      <div className="flex justify-between text-white mt-24 max-sm:flex-col max-sm:items-center">
         <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
           <img
             src={copyrightSign}

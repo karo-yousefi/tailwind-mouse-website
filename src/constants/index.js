@@ -1,54 +1,58 @@
 import { github, instagram, shieldTick, support, truckFast, twitter } from "../assets/icons";
-import { bigShoe1, bigShoe2, bigShoe3, customer1, customer2, shoe4, shoe5, shoe6, shoe7, thumbnailShoe1, thumbnailShoe2, thumbnailShoe3 } from "../assets/images";
+import { bigMouse1, bigMouse2, bigMouse3, bigMouse4, customer1, customer2, mouse5, mouse6, mouse7, mouse8, thumbnailMouse1, thumbnailMouse2, thumbnailMouse3, thumbnailMouse4 } from "../assets/images";
 
 export const navLinks = [
     { href: "#home", label: "Home" },
-    { href: "#about-us", label: "About Us" },
     { href: "#products", label: "Products" },
+    { href: "#about-us", label: "About Us" },
     { href: "#contact-us", label: "Contact Us" },
 ];
 
-export const shoes = [
+export const mouses = [
     {
-        thumbnail: thumbnailShoe1,
-        bigShoe: bigShoe1,
+        thumbnail: thumbnailMouse1,
+        bigMouse: bigMouse1,
     },
     {
-        thumbnail: thumbnailShoe2,
-        bigShoe: bigShoe2,
+        thumbnail: thumbnailMouse2,
+        bigMouse: bigMouse2,
     },
     {
-        thumbnail: thumbnailShoe3,
-        bigShoe: bigShoe3,
+        thumbnail: thumbnailMouse3,
+        bigMouse: bigMouse3,
+    },
+    {
+        thumbnail: thumbnailMouse4,
+        bigMouse: bigMouse4,
     },
 ];
 
 export const statistics = [
-    { value: '1k+', label: 'Brands' },
-    { value: '500+', label: 'Shops' },
-    { value: '250k+', label: 'Customers' },
+    { value: '100+', label: 'Models' },
+    { value: '10+', label: 'Brands' },
+    { value: '10K+', label: 'Customers' },
 ];
 
 export const products = [
     {
-        imgURL: shoe4,
-        name: "Nike Air Jordan-01",
-        price: "$200.20",
+        imgURL: mouse5,
+        name: "SteelSeries Aerox 9 Wireless",
+        price: "$149",
     },
     {
-        imgURL: shoe5,
-        name: "Nike Air Jordan-10",
-        price: "$210.20",
+        imgURL: mouse6,
+        name: "Logitech G502 X Plus",
+        price: "$139",
     },
     {
-        imgURL: shoe6,
-        name: "Nike Air Jordan-100",
-        price: "$220.20",
+        imgURL: mouse7,
+        name: "MSI Clutch GM51",
+        price: "$89",
     },
     {
-        imgURL: shoe7,
-        name: "Nike Air Jordan-001",
-        price: "$230.20",
+        imgURL: mouse8,
+        name: "HyperX Pulsefire Haste",
+        price: "$49",
     },
 ];
 

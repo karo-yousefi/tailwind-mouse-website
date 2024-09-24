@@ -18,15 +18,24 @@ export default {
     },
     extend: {
       fontFamily: {
-        palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
+        raleway: ["raleway", "sans-serif"],
       },
       colors: {
-        'primary': "#ECEEFF",
-        "coral-red": "#FF6452",
-        "slate-gray": "#6D6D6D",
-        "pale-blue": "#F5F6FF",
-        "white-400": "rgba(255, 255, 255, 0.80)"
+        "primary": {
+          100: "#0AE8FE",
+          200: "#26acff",
+          300: "#48B2FE",
+        },
+        "textColor": {
+          100: "#f7f7f7",
+          200: "#636a75",
+          300: "#222529",
+        },
+        "bgColor": {
+          100: "#f7f7f7",
+        }
+
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
