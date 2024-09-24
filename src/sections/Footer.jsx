@@ -16,20 +16,22 @@ const Footer = () => {
             />
           </a>
           <p
-            className="mt-6 text-base leading-7 font-montserrat text-white-400 sm:max-w-sm">
-            The mouses for any uses!
+            className="mt-6 text-textColor-100 leading-7 font-raleway text-white-400 sm:max-w-sm">
+            The mouse that you want!
           </p>
           <div className="flex items-center gap-5 mt-8">
             {
               socialMedia.map((item) => {
                 return (
-                  <div key={item} className="flex justify-center items-center w-12 h-12 bg-white rounded-full">
-                    <img
-                      src={item.src}
-                      alt={item.alt}
-                      width="24px"
-                      height="24px"
-                    />
+                  <div key={item} className="flex justify-center items-center w-12 h-12 bg-white rounded-full cursor-pointer hover:scale-110 transition-normal">
+                    <a href={item.link} target="_blank">
+                      <img
+                        src={item.src}
+                        alt={item.alt}
+                        width="20px"
+                        height="20px"
+                      />
+                    </a>
                   </div>
                 )
               })
@@ -41,11 +43,11 @@ const Footer = () => {
               footerLinks.map((item) => {
                 return (
                   <div key={item}>
-                    <h4 className="text-white font-montserrat text-2xl font-medium leading-normal mb-6">{item.title}</h4>
+                    <h4 className="text-white font-raleway text-2xl font-medium leading-normal mb-6">{item.title}</h4>
                     <ul>
                       {item.links.map((link) => {
                         return (
-                          <li key={link.name} className="mt-3 text-textColor-100 font-montserrat text-base leading-normal hover:text-textColor-200 cursor-pointer">
+                          <li key={link.name} className="mt-3 text-textColor-100 font-raleway text-base leading-normal hover:text-textColor-200 cursor-pointer">
                             <a>{link.name}</a>
                           </li>
                         )
@@ -57,8 +59,8 @@ const Footer = () => {
             }
         </div>
       </div>
-      <div className="flex justify-between text-white mt-24 max-sm:flex-col max-sm:items-center">
-        <div className="flex flex-1 justify-start items-center gap-2 font-montserrat cursor-pointer">
+      <div className="flex justify-between text-textColor-100 mt-24 max-sm:flex-col max-sm:items-center">
+        <div className="flex flex-1 justify-start items-center gap-2 font-raleway cursor-pointer">
           <img
             src={copyrightSign}
             alt="Copyright"
@@ -66,9 +68,9 @@ const Footer = () => {
             height="20px"
             className="rounded-full m-0"
           />
-          <p>Copyright. All rights reserved.</p>
+          <p className="hover:text-textColor-200">Copyright. All rights reserved.</p>
         </div>
-        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
+        <p className="hover:text-textColor-200">Terms & Conditions</p>
       </div>
     </footer>
   )

@@ -7,12 +7,13 @@ import customer1 from './customer1.png'
 import customer2 from './customer2.png'
 
 
-import offer from './offer.svg'
+import offer from './offer.png'
 
 import mouse5 from './mouse5.png'
 import mouse6 from './mouse6.png'
 import mouse7 from './mouse7.png'
 import mouse8 from './mouse8.png'
+import mouse5NoBG from "./mouse5-nobg.png";
 
 import thumbnailBackground from './thumbnail-background.svg'
 import thumbnailMouse1 from './thumbnailMouse1.png'
@@ -34,6 +35,7 @@ export {
     mouse6,
     mouse7,
     mouse8,
+    mouse5NoBG,
 
     thumbnailBackground,
     thumbnailMouse1,

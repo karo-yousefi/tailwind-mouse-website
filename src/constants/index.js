@@ -92,14 +92,14 @@ export const reviews = [
 
 export const footerLinks = [
     {
-        title: "Products",
+        title: "Brands",
         links: [
-            { name: "Air Force 1", link: "/" },
-            { name: "Air Max 1", link: "/" },
-            { name: "Air Jordan 1", link: "/" },
-            { name: "Air Force 2", link: "/" },
-            { name: "Nike Waffle Racer", link: "/" },
-            { name: "Nike Cortez", link: "/" },
+            { name: "LogiTech   ", link: "/" },
+            { name: "Corsair", link: "/" },
+            { name: "Razer", link: "/" },
+            { name: "Glorious", link: "/" },
+            { name: "Hyper X", link: "/" },
+            { name: "MSI", link: "/" },
         ],
     },
     {
@@ -122,7 +122,7 @@ export const footerLinks = [
 ];
 
 export const socialMedia = [
-    { src: github, alt: "githib logo" },
-    { src: twitter, alt: "twitter logo" },
-    { src: instagram, alt: "instagram logo" },
+    { src: github, alt: "githib logo", link: "https://github.com/karo-yousefi"},
+    { src: twitter, alt: "twitter logo", link: "https://x.com/karo_yousefi_"},
+    { src: instagram, alt: "instagram logo", link: "https://www.instagram.com/karo_yousefi_"},
 ];

@@ -18,7 +18,7 @@ const MouseCard = ({imgURL, changeBigImg, bigImg}) => {
             height="103"
             className="object-contain transition-normal hover:scale-[1.1]"
           />
-        </div>
+        </div>  
     </div>
   )
 }
